@@ -41,4 +41,13 @@ class PointTest {
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when135to824then7dot141() {
+        Point a = new Point(1, 3, 5);
+        Point b = new Point(8, 2, 4);
+        double expected = 7.141;
+        double output = a.distance3d(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
