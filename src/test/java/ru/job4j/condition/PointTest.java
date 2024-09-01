@@ -8,45 +8,37 @@ import static org.assertj.core.api.Assertions.withPrecision;
 class PointTest {
     @Test
     void when00to20then2() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
         double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
+        double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when472112to159Minus304then520dot6() {
+        Point a = new Point(472, 112);
+        Point b = new Point(159, -304);
         double expected = 520.6;
-        int x1 = 472;
-        int y1 = 112;
-        int x2 = 159;
-        int y2 = -304;
-        double output = Point.distance(x1, y1, x2, y2);
+        double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void whenMinus300121toMinus193Minus345then478dot126() {
+        Point a = new Point(-300, 121);
+        Point b = new Point(-193, -345);
         double expected = 478.126;
-        int x1 = -300;
-        int y1 = 121;
-        int x2 = -193;
-        int y2 = -345;
-        double output = Point.distance(x1, y1, x2, y2);
+        double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when45145toMinus417198then465dot03() {
+        Point a = new Point(45, 145);
+        Point b = new Point(-417, 198);
         double expected = 465.03;
-        int x1 = 45;
-        int y1 = 145;
-        int x2 = -417;
-        int y2 = 198;
-        double output = Point.distance(x1, y1, x2, y2);
+        double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
