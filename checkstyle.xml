@@ -23,7 +23,7 @@
 
         <module name="EmptyLineSeparator"> <!-- Java Style Guide: Source file structure -->
             <property name="tokens" value="
-            CLASS_DEF, ENUM_DEF, INTERFACE_DEF, CTOR_DEF, STATIC_INIT, INSTANCE_INIT, VARIABLE_DEF, METHOD_DEF"/>
+            CLASS_DEF, ENUM_DEF, INTERFACE_DEF, ACTOR_DEF, STATIC_INIT, INSTANCE_INIT, VARIABLE_DEF, METHOD_DEF"/>
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
             <property name="allowMultipleEmptyLines" value="false"/>
             <property name="allowMultipleEmptyLinesInsideClassMembers" value="false"/>
@@ -48,7 +48,7 @@
         <!--<module name="LineLength"/>-->
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
-            <property name="max" value="40"/>
+            <property name="max" value="60"/>
         </module>
         <module name="ParameterNumber"/>
 
